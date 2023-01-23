@@ -28,21 +28,61 @@
         <div class="indicator2"></div>
     </div>
 
+
+
     <div class="container">
-        <div class="wrappers">
-            <div class="wrapper1">
-                <img class="icon1" src="demo2.png" style="width:60px; height:60px; border-radius: 50%" ;>
-                <span class="text">Εξερεύνησε την περιοχή</span>
-            </div><br>
-            <div class="wrapper1">
-                <img class="icon1" src="circle2.png" style="width:60px; height:60px; border-radius: 50%" ;>
-                <span class="text">Δες τα βιντεάκια</span>
-            </div><br>
-            <div class="wrapper1" id="third_ar">
-                <img class="icon1" src="ar.png" style="width:60px; height:60px" ;>
-                <span class="text">Πήγαινε στον πραγματικό χώρο για να ζήσεις μια AR εμπειρία*</span>
+        <div class="info">
+            <div class="wrapper">
+                <div class="text">Τα Άνω Πατήσια είναι μια συνοικία του δήμου Αθήνας. Βρίσκεται στο βόρειο άκρο του
+                    δήμου
+                    και συνορεύει με τη Ριζούπολη, την Κυπριάδου, το Γαλάτσι, την Κυψέλη, τα Κάτω Πατήσια και το δήμο
+                    της
+                    Νέας Φιλαδέλφειας - Νέας Χαλκηδόνας. Φυσικό όριο μεταξύ του τελευταίου και των Άνω Πατησίων αποτελεί
+                    ο χείμαρρος Ποδονίφτης</div>
             </div>
         </div>
+
+        <div class="menu">
+            <div class="wrapper1 popup2" onclick="popup2()">
+                <img class="icon1" src="circle2.png" style="width:60px; height:60px;"> <br>
+                <span class="text text1" style="font-weight: 800;">Βίντεο</span>
+                <div class="text popuptext" id="myPopup2">
+                    <p> Δες τα βίντεο στον παρακάτω χάρτη</p>
+                </div>
+            </div>
+
+
+            <div class="wrapper1 popup" onclick="popup()">
+                <img class="icon1" src="ar.png" style="width:60px; height:60px;"> <br>
+                <span class="text text1" style="font-weight: 800;">AR</span>
+
+                <div class="popuptext" id="myPopup">
+                    <div class="wrapper1 ARdiv">
+                        <div id="desktop" class="codes">
+                            <img class="download" src="blippar.png" width="200px" ;>
+                            <img class="download" src="blippar2.png" width="200px" ;>
+                            <p class="text textAR"> <br> Σκάναρε αυτούς τους κωδικούς με το κινητό σου και ζήσε την
+                                εμπειρία από το χώρο σου <br><br> <span style="font-weight: 600;"> 1.Πάρκο
+                                    Δρακοπούλου<br>2.Ποδονίφτης</span>
+                        </div>
+                        
+                        <span class="tablet text" style="font-size: 1rem;"><br><br> * Αν είσαι με τάμπλετ μπες σε αυτά τα links: <br><br>
+                            <a href="https://ar.blippar.com/ba9s3ojv1sea456g01ion9mptatk0gmfatogqx6f/">Drakopoulou
+                                sounds</a> <br>
+                            <a href="https://ar.blippar.com/risgtgonb35g20gyxfjkh8es07z35myddao95qb6/">Podoniftis</a>
+                        </span>
+                        <span id="codes_phone" class="text">Για να δεις το επαυξημένο περιεχόμενο μπες σε αυτά τα
+                            links: <br><br>
+                            <a href="https://ar.blippar.com/ba9s3ojv1sea456g01ion9mptatk0gmfatogqx6f/">Drakopoulou
+                                sounds</a> <br>
+                            <a href="https://ar.blippar.com/risgtgonb35g20gyxfjkh8es07z35myddao95qb6/">Podoniftis</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <section>
             <div class="content">
                 <img id="map_im" src="mapp.png">
@@ -125,7 +165,8 @@
                 </div>
 
                 <div class="tooltip tooltip-7">
-                    <a class="ref ref7" href="#" onclick="toggle7(); playVi();"><span class="reftext ref7text">Παλιό σπίτι</span></a>
+                    <a class="ref ref7" href="#" onclick="toggle7(); playVi();"><span class="reftext ref7text">Παλιό
+                            σπίτι</span></a>
                     <div class="video video7">
                         <figure><iframe class="video-responsive" title="vimeo-player"
                                 src="https://player.vimeo.com/video/789529652?h=f2dc993e28" width="840" height="560"
@@ -137,7 +178,8 @@
                 </div>
 
                 <div class="tooltip tooltip-8">
-                    <a class="ref ref8" href="#" onclick="toggle8(); playVi();"><span class="reftext ref8text">Νίνα</span></a>
+                    <a class="ref ref8" href="#" onclick="toggle8(); playVi();"><span
+                            class="reftext ref8text">Νίνα</span></a>
                     <div class="video video8">
                         <figure><iframe class="video-responsive" title="vimeo-player"
                                 src="https://player.vimeo.com/video/789654870?h=c32591e945" width="840" height="560"
@@ -149,7 +191,8 @@
                 </div>
 
                 <div class="tooltip tooltip-9">
-                    <a class="ref ref9" href="#" onclick="toggle9(); playVi();"><span class="reftext ref9text">Ζέρβα</span></a>
+                    <a class="ref ref9" href="#" onclick="toggle9(); playVi();"><span
+                            class="reftext ref9text">Ζέρβα</span></a>
                     <div class="video video9">
                         <figure><iframe class="video-responsive" title="vimeo-player"
                                 src="https://player.vimeo.com/video/789657517?h=c20a73f6de" width="840" height="560"
@@ -173,24 +216,11 @@
                 <script src="myscripts.js"></script>
             </div>
         </section>
-        <div class="wrapper1 ARdiv">
-            <div class="codes">
-                <img class="download" src="blippar.png" width="200px" ;>
-                <img class="download" src="blippar2.png" width="200px" ;>
-            </div>
-            <div class="ARdiv2">
-                <p class="text textAR">* Σκάναρε αυτούς τους κωδικούς με το κινητό σου και ζήσε την εμπειρία από το χώρο
-                    σου <br><br> <span style="font-weight: 600;">1.Πάρκο Δρακοπούλου<br>2.Ποδονίφτης</span> <br><br>
-                    <span id="codes_phone">Αν βλέπεις τη σελίδα απ' το κινητό σου τότε μπες σε αυτά τα links: <br>
-                        <a href="https://ar.blippar.com/ba9s3ojv1sea456g01ion9mptatk0gmfatogqx6f/">Drakopoulou sounds</a> <br>
-                        <a href="https://ar.blippar.com/risgtgonb35g20gyxfjkh8es07z35myddao95qb6/">Podoniftis</a>
-                    </span> </p>
-            </div>
-        </div>
+
         <footer>
             <p>Information and Communication Technologies in Education
                 <br> National and Kapodistrian University of Athens <br><br>
-                Created by Maria Stefanou | <b>2022</b>
+                Created by Maria Stefanou | <b>2023</b>
             </p>
         </footer>
     </div>
