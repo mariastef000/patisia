@@ -41,14 +41,15 @@ function playVi(){
 }
 
 function stopVi(){
-    var videos = document.querySelectorAll('iframe, video');
+    const bannerVi = document.getElementById('bannerVi');
+    var videos = document.querySelectorAll("iframe, video *:not(bannerVi)");
     const mapIm = document.getElementById('map_im');
+    
 	Array.prototype.forEach.call(videos, function (video) {
 		if (video.tagName.toLowerCase() === 'video') {
 			video.pause(); video.currentTime = 0;
-            location.reload(); 
-            mapIm.scrollIntoView();
 		} else {
+            mapIm.scrollIntoView();
 			var src = video.src;
 			video.src = src;
 		}
