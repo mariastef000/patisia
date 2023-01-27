@@ -36,6 +36,10 @@ function toggle9() {
     var video9 = document.querySelector(".video9")
     video9.classList.toggle("active");
 }
+function toggle10() {
+    var video10 = document.querySelector(".video10")
+    video10.classList.toggle("active");
+}
 function playVi(){
     var videos = document.getElementsByTagName("video");
 }
@@ -56,11 +60,17 @@ function stopVi(){
 	});
 }
 
-function popup() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
-  function popup2() {
-    var popup2 = document.getElementById("myPopup2");
-    popup2.classList.toggle("show");
-  }
+  $(document).mouseup(function (e)
+  {
+      var container = new Array();
+      container.push($('#myPopup'));
+      container.push($('#myPopup2'));
+      
+      $.each(container, function(key, value) {
+          if (!$(value).is(e.target) 
+              && $(value).has(e.target).length === 0) 
+          {
+              $(value).hide();
+          }
+      });
+  });
