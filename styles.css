@@ -512,6 +512,7 @@ footer p {
     position: relative;
 }
 .popup .popuptext {
+    display:none;
     width: 560px;
     background-color: rgb(0, 0, 0);
     color: #fff;
@@ -524,6 +525,7 @@ footer p {
     position: absolute;
 }
 .popup2 .popuptext{
+    display:none;
     width: 260px;
     background-color: rgb(0, 0, 0);
     color: #fff;
