@@ -8,6 +8,7 @@
     <title>Patisia City</title>
     <link rel="icon" type="image/png" href="circle2.png" />
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 </head>
 
 <body>
@@ -42,20 +43,17 @@
         </div>
 
         <div class="menu">
-            <div class="wrapper1 popup2" onclick="popup2()" data-position-to="#myPopup2">
-                <img class="icon1" src="circle2.png" style="width:60px; height:60px;"> <br>
-                <span class="text1" style="font-weight: 800;">Βίντεο</span>
-                <div class="popuptext" id="myPopup2">
-                    <p> Δες τα βίντεο στον παρακάτω χάρτη</p>
+                <div class="wrapper1 popup2 " onclick="$('#myPopup2').show();">
+                    <img class="icon1" src="circle2.png" style="width:60px; height:60px;"> <br>
+                    <span class="text1" style="font-weight: 800;">Βίντεο</span>
+                    <div class="popuptext popups" id="myPopup2">
+                        <p> Δες τα βίντεο στον παρακάτω χάρτη</p>
+                    </div>
                 </div>
-            </div>
-
-
-            <div class="wrapper1 popup" onclick="popup()">
+            <div class="wrapper1 popup " onclick="$('#myPopup').show();">
                 <img class="icon1" src="ar.png" style="width:60px; height:60px;"> <br>
                 <span class="text1" style="font-weight: 800;">AR</span>
-
-                <div class="popuptext" id="myPopup">
+                <div class="popuptext popups" id="myPopup">
                     <div class="wrapper1 ARdiv">
                         <div id="desktop" class="codes">
                             <img class="download" src="blippar.png" width="200px" ;>
@@ -72,10 +70,10 @@
                             <a href="https://ar.blippar.com/risgtgonb35g20gyxfjkh8es07z35myddao95qb6/">Podoniftis</a>
                         </span>
                         <span id="codes_phone" class="text">Για να δεις το επαυξημένο περιεχόμενο μπες σε αυτά τα
-                            links: <br>
-                            <a href="https://ar.blippar.com/ba9s3ojv1sea456g01ion9mptatk0gmfatogqx6f/">Drakopoulou
-                                sounds</a> <br>
-                            <a href="https://ar.blippar.com/risgtgonb35g20gyxfjkh8es07z35myddao95qb6/">Podoniftis</a>
+                            links: <br><br>
+                            1. <a href="https://ar.blippar.com/ba9s3ojv1sea456g01ion9mptatk0gmfatogqx6f/">Drakopoulou
+                                sounds</a> <br><br>
+                            2. <a href="https://ar.blippar.com/risgtgonb35g20gyxfjkh8es07z35myddao95qb6/">Podoniftis</a>
                         </span>
                     </div>
                 </div>
@@ -200,6 +198,19 @@
                             <figcaption>Μια παιδική χαρά </figcaption>
                         </figure>
                         <img src="close.png" class="close" onclick="  stopVi(); toggle9();">
+                    </div>
+                </div>
+
+                <div class="tooltip tooltip-10">
+                    <a class="ref ref10" href="#" onclick="toggle10(); playVi();"><span
+                            class="reftext ref9text">Στέκια</span></a>
+                    <div class="video video10">
+                        <figure><iframe class="video-responsive" title="vimeo-player"
+                                src="https://player.vimeo.com/video/793486100?h=54d94d5285" width="840" height="560"
+                                frameborder="0" allowfullscreen></iframe>
+                            <figcaption>Μερικά στέκια στα Άνω Πατήσια </figcaption>
+                        </figure>
+                        <img src="close.png" class="close" onclick="  stopVi(); toggle10();">
                     </div>
                 </div>
 
